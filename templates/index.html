@@ -1,0 +1,16 @@
+<div class="login">
+    <h1>Predict Co2 emission</h1>
+        <h3>Enter below the following values</h3>
+    <form action="{{  url_for('predict') }}"method="post">
+        <input type="text" name="enginesize" placeholder="Engine Size" required="required" />
+        <input type="text" name="cylinders" placeholder="cylinders" required="required" />
+        <input type="text" name="fuel" placeholder="fuel" required="required" />
+{#        <input type="file" id="myFile" name="filename">#}
+{#        <input type="url" id="homepage" placeholder="image url" name="homepage">#}
+
+        <button type="submit" class="btn"> Predict</button>
+    </form>
+    <br>
+    <br>
+    {{ prediction_text }}
+</div>
